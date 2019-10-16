@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="José Manuel Rodríguez Roberto">
+    <meta name="keywords" content="html,css,xml,foundation,column,row"><!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <meta name="description" content="Codigo ejemplo para aprender el uso de las columnas en el sistema de rejilla con Foundation">
+    <title>e-Store</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+  </head>
+  <body>
+    <div class="row">
+      <header class="column small-12 small-order-1"><!-- Para que las columnas sigan el orden indicado, se les debe asiganar las dimensiones (small-#, medium-#, large-#) -->
+        <div class="row">
+          <div class="column medium-3"><!--%%%%%%%%%%%%%%%%%%%5-->
+              <h1>e-Store</h1>
+          </div>
+
+          <div class="column medium-9">
+            <div class="row hide-for-small-only">
+              <div class="column">
+                <ul class="menu align-right">
+                  <li><a href="#">Ingresa</a></li>
+                  <li><a href="#">Registrate</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                  <li><a href="#">Mapa del sitio</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column large-offset-6 show-for-landscape">
+                <ul class="menu align-right">
+                  <li> <a href="#"><i class="step fi-social-facebook size-36"></i></a></li>
+                  <li> <a href="#"><i class="step fi-social-instagram size-14"></i></a></li>
+                  <li> <a href="#"><i class="step fi-social-twitter size-14"></i></a></li>
+                  <li> <a href="#"><i class="step fi-social-snapchat size-14"></i></a></li>
+                  <li> <a href="#"><i class="step fi-social-pinterest size-14"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="column small-12 small-order-4 medium-order-2">
+        <div class="row">
+          <div class="column">
+            <div class="small-stack medium-unstack button-group stacked-for-small expanded">
+              <a href="#" class="button primary">Hogar</a>
+              <a href="#" class="button primary">Salud</a>
+              <a href="#" class="button primary">Deporte</a>
+              <a href="#" class="button primary">Tecnología</a>
+              <a href="#" class="button primary">Accesorios</a>
+              <a href="#" class="button primary">Ropa</a>
+              <a href="#" class="button primary">Mantenimiento</a>
+              <a href="#" class="button secondary">Carrito <i class="step fi-shopping-cart size-14"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="column small-12 small-order-2">
+        <div class="row">
+            <div aria-label="You are here:" role="navigation">
+              <div class="column">
+              <ul class="breadcrumbs" aria-hidden="true"><!-- Ubica la lista de manera horizontal, separando cada elemento con / y ademas le agrega estilos -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hogar</a></li>
+                <li><a href="#">Varios</a></li>
+                <li>Decoración</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="column small-12 small-order-3">
+        <div class="row small-stack medium-unstack">
+          <div class="column large-3 medium-4 hide-for-small-only">
+            <div class="callout"><h3>Búsqueda Avanzada</h3>
+              <p class="show-for-sr">A continuación hay un formulario para hacer búsquedas avanzadas.</p>
+              <form>
+                <label>Por nombre:
+                  <input type="text">
+                </label>
+
+                <label>Por referencia:
+                  <input type="text" aria-describedby="ayudaTexto">
+                </label>
+                <p class="help-text" id="ayudaTexto">Número único del producto</p>
+
+                <label>Por categoría:
+                  <select>
+                    <option value="valor1">Hogar</option>
+                    <option value="valor2">Salud</option>
+                    <option value="valor3">Deporte</option>
+                    <option value="valor4">Tecnología</option>
+                    <option value="valor5">Accesorios</option>
+                    <option value="valor6">Ropa</option>
+                    <option value="valor7">Mantenimiento</option>
+                  </select>
+                </label>
+
+                <legend>Tipo de producto:</legend>
+                <input type="checkbox" id="Checkbox1"><label for="Checkbox1">Nuevo</label>
+                <input type="checkbox" id="Checkbox2"><label for="Checkbox2">Usado</label>
+
+                <legend>Tipo de precio:</legend>
+                <input type="radio" name="precio" value="Pleno" id="Pleno"><label for="Pleno">Pleno</label>
+                <input type="radio" name="precio" value="EnOferta" id="EnOferta"><label for="EnOferta">En oferta</label>
+
+                <label>¿Buscar productos agotados?
+                  <div class="switch text-center">
+                    <input class="switch-input" type="checkbox" name="Switch" id="Switch">
+                    <label class="switch-paddle" for="Switch">
+                      <span class="switch-active">Si</span>
+                      <span class="switch-inactive">No</span>
+                    </label>
+                  </div>
+                </label>
+                <hr>
+                <div class="text-center">
+                  <a href="#" class="small button">Buscar <i class="step fi-magnifying-glass size-14"></i></a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="column large-9 medium-8">
+            <div class=" callout">
+              <h3>Decoración</h3>
+              <hr><!-- Sirve para hacer una linea horizontal separadora -->
+              <div>
+                <div class="row text-center large-uncollapse">
+                  <div class="column large-4 medium-6 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor1.jpg" alt="Decoración 1" class="thumbnail"><!-- thumbnail: Sirve para poner un marco alrededor de la img -->
+                      <p>Decoración 1</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                  <div class="column large-4 medium-6 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor2.jpg" alt="Decoración 2" class="thumbnail">
+                      <p>Decoración 2</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                  <div class="column large-4 medium-12 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor3.jpg" alt="Decoración 3" class="thumbnail">
+                      <p>Decoración 3</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row text-center large-uncollapse">
+                  <div class="column large-4 medium-6 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor4.jpg" alt="Decoración 4" class="thumbnail">
+                      <p>Decoración 4</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                  <div class="column large-4 medium-6 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor5.jpg" alt="Decoración 5" class="thumbnail">
+                      <p>Decoración 5</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                  <div class="column large-4 medium-12 small-12">
+                    <div class="callout primary">
+                      <img src="img/Decor6.jpg" alt="Decoración 6" class="thumbnail">
+                      <p>Decoración 6</p>
+                      <a href="#">Ver más <i class="step fi-plus size-14"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+    <!-- El siguiente bloque de codigo se debe incluir. -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
